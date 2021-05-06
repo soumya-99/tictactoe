@@ -22,13 +22,13 @@ h1 {
 }
 
 .board {
-	border: 1rem solid #ff652f;
-	background: #ff652f;
+	border: 0.5rem solid #ffffff;
+	background: #e9961a;
 	width: 500px;
 	height: 500px;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-	gap: 1rem;
+	gap: 0.5rem;
 }
 
 .squares {
@@ -41,10 +41,10 @@ h1 {
 }
 
 .X {
-	color: red;
+	color: rgb(223, 51, 51);
 }
 .O {
-	color: green;
+	color: rgb(62, 204, 62);
 }
 
 .info-wrapper {
