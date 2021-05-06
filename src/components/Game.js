@@ -40,15 +40,20 @@ function Game() {
 	// 	})
 	// }
 
+	const handleReset = () => {
+	setHistory([Array(9).fill(null)])
+    setStepNumber(0)
+	setXIsNext(true)
+	}
+
 	return (
 		<>
 			<h1>Tic Tac Toe</h1>
 			<Board squares={history[stepNumber]} onClick={handleClick} />
 			<div className="info-wrapper">
-				{/* <div>
-					<h3>History</h3>
-					{renderMoves()}
-				</div> */}
+				<div>
+					<button onClick={handleReset}>Reset</button>
+				</div>
 				<h3>{winner ? `Winner!!! ${winner}` : `Next Player: ${xO}`}</h3>
 			</div>
 		</>
