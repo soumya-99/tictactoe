@@ -1,3 +1,4 @@
+import React from 'react'
 
 function Square({ value, onClick }) {
 	const style = value ? `squares ${value}` : `squares`
